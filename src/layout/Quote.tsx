@@ -32,14 +32,17 @@ export class Quote extends React.Component<QuoteProps, {}> {
         {
           text: 'Share', onPress: () => {
             let message = `"${quote.body}"\n\n- Trump via ${quote.url}`;
+            let url = quote.url;
             if (quote.image) {
               message = `${quote.image}\n\n- Trump via ${quote.url}"`;
+              url = quote.image;
             }
 
             Share.share(
               {
                 title: 'Tronald Dump Meme',
                 message,
+                url,
               },
               {
                 dialogTitle: 'Tronald Dump',
