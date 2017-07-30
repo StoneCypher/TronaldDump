@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Tronald Dump",
+    "description": "An archive for the dumbest things Donald Trump has ever said, as well as a meme generator.",
     "icon": "./src/assets/images/logo.png",
     "orientation": "portrait",
     "android": {
