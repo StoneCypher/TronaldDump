@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Tronald Dump",
+    "icon": "./src/assets/images/logo.png",
+    "orientation": "portrait",
+    "android": {
+      "package": "com.jacob9706.tronalddump",
+      "versionCode": 2
+    },
+    "ios": {
+      "bundleIdentifier": "com.jacob9706.tronalddump",
+      "supportsTablet": true
+    },
+    "privacy": "public",
+    "sdkVersion": "18.0.0",
+    "packagerOpts": {
+      "sourceExts": [
+        "js",
+        "ts",
+        "tsx"
+      ],
+      "transformer": "node_modules/react-native-typescript-transformer"
+    }
+  }
+}

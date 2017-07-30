@@ -1,0 +1,49 @@
+{
+  /*
+  * Possible values:
+  * - the name of a built-in config
+  * - the name of an NPM module which has a "main" file that exports a config object
+  * - a relative path to a JSON file
+  */
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "arrow-parens": true,
+    "class-name": true,
+    "curly": true,
+    "member-access": true,
+    "no-any": false,
+    "no-console": [
+      true
+    ],
+    "no-trailing-whitespace": true,
+    "no-unused-expression": [
+      true
+    ],
+    "no-unused-new": true,
+    "no-unused-variable": [
+      true
+    ],
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-finally",
+      "check-whitespace"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "object-literal-sort-keys": true
+  }
+}
