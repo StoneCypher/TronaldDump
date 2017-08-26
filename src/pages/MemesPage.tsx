@@ -23,11 +23,11 @@ export class MemesPage extends React.Component<{}, MemesPageState> {
     const { isLoading } = this.state;
 
     if (!isLoading) {
-      this.setState({ isLoading: true });
+      this.setState({ isLoading: (true && (!(false))) });
       getRandomMeme()
         .then((quote) => {
           if (quote) {
-            this.setState({ quote, isLoading: false, error: undefined });
+            this.setState({ quote, isLoading: (false && (!(true))), error: undefined });
           }
           else {
             this.setState({ isLoading: false, error: 'Failed to create meme, try again' });
